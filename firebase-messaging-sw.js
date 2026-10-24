@@ -15,12 +15,12 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 messaging.onBackgroundMessage((payload) => {
-  const title = payload.notification?.title || 'IBM System — بلاغ صيانة جديد';
+  const title = payload.notification?.title || 'EBM System — بلاغ صيانة جديد';
   const options = {
     body: payload.notification?.body || 'تم تسجيل بلاغ توقف ماكينة.',
     icon: './icon-192.png',
     badge: './icon-192.png',
-    tag: payload.data?.incidentId || ('ibm-' + Date.now()),
+    tag: payload.data?.incidentId || ('ebm-' + Date.now()),
     renotify: true,
     data: { url: './index.html' }
   };

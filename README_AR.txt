@@ -1,4 +1,4 @@
-IBM System — إشعارات Push بالخلفية
+EBM System — إشعارات Push بالخلفية
 ==================================
 
 هذه النسخة تضيف إشعارات FCM تصل للجهاز المسجل حتى لو صفحة الموقع ليست مفتوحة، عن طريق Service Worker وCloud Function.
@@ -10,12 +10,12 @@ IBM System — إشعارات Push بالخلفية
 - functions/package.json وfirebase.json و.firebaserc: إعدادات نشر الوظيفة.
 
 خطوات الإعداد:
-1) ارفع محتويات مجلد IBM_System إلى جذر مستودع GitHub Pages، مع استبدال الملفات القديمة. يجب أن يكون الموقع على HTTPS.
+1) ارفع محتويات مجلد EBM_System إلى جذر مستودع GitHub Pages، مع استبدال الملفات القديمة. يجب أن يكون الموقع على HTTPS.
 2) افتح الموقع من كل جهاز/متصفح تريد أن يستقبل إشعارات. اضغط «تفعيل الإشعارات والصوت» واسمح بإشعارات المتصفح. كرر ذلك لكل جهاز مرة واحدة.
 3) نشر وظيفة الإرسال يتطلب جهاز كمبيوتر أو بيئة فيها Node.js وFirebase CLI، وتسجيل الدخول لنفس مشروع sstmy-627dc:
    npm install -g firebase-tools
    firebase login
-   cd IBM_System
+   cd EBM_System
    cd functions && npm install && cd ..
    firebase deploy --only functions
 4) نشر Cloud Functions قد يتطلب ترقية مشروع Firebase إلى خطة Blaze وربط حساب فوترة، حسب إعدادات Google الحالية. راجع التكلفة وحدود الاستخدام قبل التفعيل.

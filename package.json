@@ -1,5 +1,5 @@
 {
-  "name": "ibm-system-push-functions",
+  "name": "ebm-system-push-functions",
   "private": true,
   "engines": { "node": "20" },
   "main": "index.js",
